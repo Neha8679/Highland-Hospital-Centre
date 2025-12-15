@@ -8,7 +8,7 @@ import {
   SheetTrigger,
   SheetTitle,
 } from "@/components/ui/sheet";
-import {ThemeToggle} from "@/components/molecules/theme-toggle";
+import { ThemeToggle } from "@/components/molecules/theme-toggle";
 import { EllipsisVertical, MoreVertical, Sun } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -44,7 +44,7 @@ export default function MenuClient({ desktopAvatar }: MenuClientProps) {
  
         {/* Book Appointment Button */}
         <Button asChild variant="brand" size="lg">
-          <Link href="/" className="text-text-caption-2">
+          <Link href="/#our-doctors" className="text-text-caption-2">
             Book Appointment
           </Link>
         </Button>
@@ -80,7 +80,7 @@ export default function MenuClient({ desktopAvatar }: MenuClientProps) {
  
             <Button asChild variant="brand" size="sm" className="w-full my-2">
               <Link
-                href="/"
+                href="/#our-doctors"
                 onClick={closeMobileMenu}
                 className="text-text-caption-2"
               >
