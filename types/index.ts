@@ -42,4 +42,9 @@ export interface DoctorDetails {
   specializations: string[];
   brief: string;
 }
- 
+export interface TimeSlot {
+  startTime:string;
+  endTime:string;
+  startTimeUTC:Date;
+  endTimeUTC:Date;
+}
