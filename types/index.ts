@@ -1,4 +1,6 @@
 import { Department, BannerImage } from "../lib/generated/prisma";
+
+export type FieldErrors = Record<string,string[] | undefined>;
  
 export interface ServerActionResponse<T = any> {
   success: boolean;
@@ -6,6 +8,7 @@ export interface ServerActionResponse<T = any> {
   data?: T;
   error?: string;
   errorType?: string;
+  fieldErrors?: FieldErrors;
 }
  
 export interface DepartmentData extends Department {}
